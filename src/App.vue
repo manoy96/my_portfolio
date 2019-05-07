@@ -1,10 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/work">Work</router-link>
-    </div>
+    </div>-->
+    <v-toolbar>
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title>Title</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-sm-and-down">
+        <v-btn flat to="/">Link One</v-btn>
+        <v-btn flat to="/about">Link Two</v-btn>
+        <v-btn flat to="/work">Link Three</v-btn>
+        <!-- <v-btn flat><router-link to="/">Home</router-link></v-btn>
+        <v-btn flat><router-link to="/about">About</router-link></v-btn>
+        <v-btn flat><router-link to="/work">Work</router-link></v-btn> -->
+      </v-toolbar-items>
+    </v-toolbar>
+
     <router-view/>
   </div>
 </template>

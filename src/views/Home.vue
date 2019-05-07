@@ -2,10 +2,6 @@
   <div class="purple darken-2 text-xs-center">
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <v-container>
-      <v-layout>
-      </v-layout>
-    </v-container>
   </div>
 </template>
 
@@ -20,3 +16,14 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.content {
+   width: 100%;
+   p {
+      width: 100%;
+      background-color: #000;
+   }
+}
+</style>
+
